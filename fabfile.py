@@ -156,3 +156,7 @@ def sync_database():
         with prefix('source {}'.format('~/.venv/'+PROJECT_NAME+'/bin/activate')):
             run('python manage.py migrate --settings={}.custom_settings.stage_settings'.format(PROJECT_NAME))
 
+def create_superuser():
+    with cd('{}'.format('/var/www/'+PROJECT_NAME)):
+        with prefix('source {}'.format('~/.venv/'+PROJECT_NAME+'/bin/activate')):
+            run('python manage.py createsuperuser --settings={}.custom_settings.stage_settings'.format(PROJECT_NAME))
