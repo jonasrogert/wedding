@@ -23,7 +23,7 @@ class RsvpForm(ModelForm):
                 Div(
                     'next_day',
                     Submit('submit', _('Submit')),
-                    css_class='col-xs-offset-2',
+                    css_class='col-sm-offset-4',
                 ),
             )
         )
