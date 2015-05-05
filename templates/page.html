@@ -2,7 +2,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{% page_attribute 'page_title' %}</title>
+        <title>Isabelle och Jonas - {% page_attribute 'page_title' %}</title>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="description" content="{% page_attribute meta_description %}"/>
@@ -28,6 +28,7 @@
         {% cms_toolbar %}
 
         <div id='main-container' class='container'>
+            <div id='inner-container' class='col-sm-8 col-sm-offset-2'>
             {% block 'header' %}
             {% include 'includes/header.html' %}
             {% endblock 'header' %}
@@ -49,6 +50,7 @@
             <footer>
             </footer>
             {% endblock %}
+            </div>
         </div>
 
         {# Js block and adds #}

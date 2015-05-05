@@ -1,12 +1,17 @@
 html, body {height:100%;}
 #main-container {
     position: relative;
-    padding: 3em;
-    min-height: 100%;
+    min-height: 100% !important;
     overflow: hidden;
 }
+#main-container #inner-container {
+    position: relative;
+    padding: 3em;
+    min-height: 100% !important;
+    height: 100%;
+}
 
-#main-container::after {
+#main-container #inner-container::after {
     content: "";
     display: block;
     background: url('/static/img/background_inner.png');
