@@ -1,5 +1,5 @@
 AWS = True
-from mentor.custom_settings.applications_settings import *
+from .custom_settings.applications_settings import *
 
 DATABASES = {
     'default': {
