@@ -1,0 +1,13 @@
+{% extends 'page.html' %}
+{% load sekizai_tags staticfiles crispy_forms_tags %}
+
+{% block 'content' %}
+    {% if not form.cleaned_data %}
+    <div class='well well-lg'>
+        {% crispy form %}
+    </div>
+    {% else %}
+        <h1>Tack! Vi ser fram emot att träffas på vårt brölopp!</h1>
+    {% endif %}
+{% endblock 'content' %}
+

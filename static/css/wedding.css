@@ -1,0 +1,26 @@
+html, body {height:100%;}
+#main-container {
+    position: relative;
+    padding: 3em;
+    min-height: 100%;
+    overflow: hidden;
+}
+
+#main-container::after {
+    content: "";
+    display: block;
+    background: url('/static/img/background_inner.png');
+    background-repeat: repeat;
+    opacity: 0.9;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+#main-header .logo a img {
+    display: block;
+    margin: auto;
+}

@@ -1,0 +1,65 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <jonas@rogert.se>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 1.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2015-05-03 19:41+0200\n"
+"PO-Revision-Date: 2015-05-03 17:46+0200\n"
+"Last-Translator: Jonas Rogert <jonas@rogert.se>\n"
+"Language-Team: Swedish <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: cms_app.py:7
+msgid "Rsvp Form"
+msgstr "OSA formulär"
+
+#: forms.py:23
+msgid "Submit"
+msgstr "Skicka in"
+
+#: models.py:10
+msgid "Full name"
+msgstr "Ditt namn"
+
+#: models.py:17
+msgid "Email"
+msgstr "Mailadress"
+
+#: models.py:18
+msgid "Your email address where we can reach you."
+msgstr "Din mailadress så att vi eller våra toastmasters kan nå dig"
+
+#: models.py:23
+msgid "Telephone number"
+msgstr "Telefonnummer"
+
+#: models.py:24
+msgid ""
+"Telephone number either landline or mobile that we or             toasmaster "
+"can use to reach you"
+msgstr "Ditt telefonnummer så att vi eller våra toastmasters kan nå dig."
+
+#: models.py:31
+msgid "Special food"
+msgstr "Specialkost"
+
+#: models.py:32
+msgid "Are you vegetarian or have any food allergies?"
+msgstr "Vegetarian eller matallergier?"
+
+#: models.py:37
+msgid "Day after brunch"
+msgstr "Dagen-efter-brunch"
+
+#: models.py:38
+msgid ""
+"We would really like you to join us for the day after                brunch!"
+msgstr "Vi reserverar bord för brunch dagen efter"

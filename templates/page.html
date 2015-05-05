@@ -1,0 +1,76 @@
+{% load cms_tags sekizai_tags menu_tags staticfiles bootstrap3 %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% page_attribute 'page_title' %}</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="{% page_attribute meta_description %}"/>
+        <meta name="keywords" content="{% page_attribute meta_keywords %}"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        {% addtoblock 'css' %}
+        <link rel="stylesheet" type="text/css" href="{% static 'css/wedding.css' %}">
+        {% endaddtoblock %}
+
+        {% addtoblock 'css' %}
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+        {% endaddtoblock %}
+
+        {% addtoblock 'css' %}
+        {% bootstrap_css %}
+        {% endaddtoblock %}
+
+        {% render_block "css" %}
+
+    </head>
+    <body>
+        {% cms_toolbar %}
+
+        <div id='main-container' class='container'>
+            {% block 'header' %}
+            {% include 'includes/header.html' %}
+            {% endblock 'header' %}
+
+            {% bootstrap_messages %}
+
+            {% block 'top_content' %}
+            <div>
+                {% placeholder 'main' %}
+            </div>
+            {% endblock %}
+
+            <div>
+                {% block 'content' %}
+                {% endblock %}
+            </div>
+
+            {% block 'footer' %}
+            <footer>
+            </footer>
+            {% endblock %}
+        </div>
+
+        {# Js block and adds #}
+        {% addtoblock 'js' %}
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        {% endaddtoblock %}
+
+        {% addtoblock 'js' %}
+        {% bootstrap_javascript %}
+        {% endaddtoblock %}
+
+        {% addtoblock 'js' %}
+        <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js'></script>
+        {% endaddtoblock %}
+
+        {% addtoblock 'js' %}
+        <script type='text/javascript'>
+            $.backstretch('{% static 'img/background.jpg' %}');
+        </script>
+        {% endaddtoblock %}
+
+        {% render_block "js" %}
+
+    </body>
+</html>
