@@ -38,6 +38,7 @@ def initial_setup():
             ]
 
     #install all requirements
+    sudo('apt-get -y update')
     sudo('apt-get -y install '+' '.join(reqs))
 
     if files.exists('/etc/nginx/site-enabled/default'):
