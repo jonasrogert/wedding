@@ -1,5 +1,5 @@
 AWS = True
-from .custom_settings.applications_settings import *
+from wedding.custom_settings.applications_settings import *
 
 DATABASES = {
     'default': {
