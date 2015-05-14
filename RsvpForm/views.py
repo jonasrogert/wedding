@@ -10,7 +10,6 @@ class RsvpView(FormView):
 
     def form_valid(self, form, **kwargs):
         form.full_clean()
-        print(form.cleaned_data)
         form.save()
         response = self.render_to_response(self.get_context_data(form=form))
         return response
