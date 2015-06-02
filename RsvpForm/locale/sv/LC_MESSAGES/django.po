@@ -62,4 +62,4 @@ msgstr "Dagen-efter-brunch"
 #: models.py:38
 msgid ""
 "We would really like you to join us for the day after                brunch!"
-msgstr "Vi reserverar bord för brunch dagen efter"
+msgstr "Vi reserverar bord för brunch dagen efter på liljeholmskajen (kostnad cirka 250 kr)"
